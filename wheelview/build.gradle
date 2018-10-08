@@ -23,6 +23,10 @@ android {
     lintOptions {
         abortOnError false
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 allprojects {
@@ -45,7 +49,6 @@ publish {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-
 }
 
 apply from: 'https://raw.githubusercontent.com/GMAndroidTeam/gradle-mvn-push/master/gradle-mvn-push.gradle'
