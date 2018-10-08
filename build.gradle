@@ -24,6 +24,9 @@ allprojects {
             url 'https://maven.google.com/'
             name 'Google'
         }
+        //本地Maven库
+        maven { url 'http://maven.gengmei/nexus/content/repositories/gengmei-android-snapshots/' }
+        maven { url 'http://maven.gengmei/nexus/content/repositories/gengmei-android/' }
     }
 }
 

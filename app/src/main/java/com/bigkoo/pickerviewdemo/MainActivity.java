@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .setDate(selectedDate)
                 .setRangDate(startDate, endDate)
                 .setLayoutRes(R.layout.pickerview_custom_lunar, new CustomListener() {
-
                     @Override
                     public void customLayout(final View v) {
                         final TextView tvSubmit =  v.findViewById(R.id.tv_finish);
